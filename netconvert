@@ -1,0 +1,6 @@
+netconvert --osm-files [filename.osm] --output-file [filename.net.xml] --geometry.remove --roundabouts.guess --ramps.guess --junctions.join --tls.guess-signals --tls.discard-simple --tls.join
+
+netconvert is a command line application. It imports digital road networks from different sources and generates road networks that can be used by other tools from the package.
+
+Docs:
+https://sumo.dlr.de/docs/netconvert.html
