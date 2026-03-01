@@ -1,0 +1,16 @@
+duarouter -n [filename.net.xml] --route-files [filename.trips.xml] -o [filename.rou.xml] --ignore-errors
+
+duarouter imports different demand definitions, computes vehicle routes that may be used by sumo using shortest path computation;
+When called iteratively duarouter performs dynamic user assignment (DUA).
+This is facilitated by the tool duaIterate.py which converges to an equilibrium state (DUE).
+
+Purpose:
+  A) Building vehicle routes from demand definitions
+  B) Computing routes during a user assignment
+  C) Repairing connectivity problems in existing route files
+
+Note:
+A .rou.xml was already constructed from randomTrips.py, so this step seems to be optional.
+
+Docs:
+https://sumo.dlr.de/docs/duarouter.html
